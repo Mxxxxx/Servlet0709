@@ -18,7 +18,6 @@ public class SetCookieServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //resp.setHeader("Set-Cookie", "today=2020-7-9");
         Cookie cookie = new Cookie("today", "2020-070-09");
-        
         resp.addCookie(cookie);
 
         resp.setContentType("text/html; charset=utf-8");
